@@ -1,0 +1,149 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>secod_my_maven</groupId>
+	<artifactId>maven</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	
+
+	<name>maven</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<!-- 引入插件，可以让你在命令行下运行mvn test或者mvn surefire:test,这样它会扫描测试类目录下（src/test/java）的测试类，只要类名符合*Test.java,那么这个测试类就会被运行 -->
+	<!-- <build> -->
+	<!-- <plugins> -->
+	<!-- <plugin> -->
+	<!-- <groupId>org.apache.maven.plugins</groupId> -->
+	<!-- <artifactId>maven-surefire-plugin</artifactId> -->
+	<!-- <version>2.12.4</version> -->
+	<!-- </plugin> -->
+	<!-- </plugins> -->
+	<!-- </build> -->
+
+
+
+	<!-- 引用的插件 ， 从Effective pom中找到的，执行xml,去除不执行的java -->
+	<build>
+		<plugins>
+			<plugin>
+
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.12.4</version>
+				<configuration>
+
+					<excludes>
+						<exclude>
+							${project.basedir}/src/test/java/secod_my_maven、maven/AppTest.java
+						</exclude>
+					</excludes>
+
+					<sureXmlFiles>
+						<sureXmlFile>
+							${project.basedir}/src/test/java/com/selenium/test/LoginTest.xml
+						</sureXmlFile>
+					</sureXmlFiles>
+				</configuration>
+
+			</plugin>
+		</plugins>
+	</build>
+
+
+
+	<!-- 单独执行java -->
+	<!-- <build> -->
+	<!-- <plugins> -->
+	<!-- <plugin> -->
+	<!-- <引用的插件 ， 从Effective pom中找到的> -->
+	<!-- <artifactId>maven-surefire-plugin</artifactId> -->
+	<!-- <version>2.12.4</version> -->
+	<!-- <configuration> -->
+	<!-- <执行java> -->
+	<!-- <includes> -->
+	<!-- <include> -->
+	<!-- secod_my_maven/maven/AppTest.java -->
+	<!-- </include> -->
+	<!-- </includes> -->
+
+	<!-- </configuration> -->
+
+	<!-- </plugin> -->
+	<!-- </plugins> -->
+	<!-- </build> -->
+
+	<!-- 引入插件，设置线程数10与并行处理方法 -->
+	<!-- <build> -->
+	<!-- <plugins> -->
+	<!-- <plugin> -->
+	<!-- <groupId>org.apache.maven.plugins</groupId> -->
+	<!-- <artifactId>maven-surefire-plugin</artifactId> -->
+	<!-- <version>2.12.4</version> -->
+	<!-- <configuration> -->
+	<!-- <parallel>methods</parallel> -->
+	<!-- <threadCount>10</threadCount> -->
+	<!-- </configuration> -->
+	<!-- </plugin> -->
+	<!-- </plugins> -->
+	<!-- </build> -->
+
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.9.6</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>1.12</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.beust/jcommander -->
+		<dependency>
+			<groupId>com.beust</groupId>
+			<artifactId>jcommander</artifactId>
+			<version>1.35</version>
+		</dependency>
+
+		<!-- 导入selenium依赖包 -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>2.44.0</version>
+		</dependency>
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.3.04</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/xerces/xercesImpl -->
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.11.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/xercesImpl-2.11.0.jar</systemPath>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.w3c.css/sac -->
+		<dependency>
+			<groupId>org.w3c.css</groupId>
+			<artifactId>sac</artifactId>
+			<version>1.3</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/sac-1.3.jar</systemPath>
+		</dependency>
+	</dependencies>
+
+</project>

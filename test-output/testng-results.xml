@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="52783" started-at="2017-11-15T08:17:36Z" finished-at="2017-11-15T08:18:29Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="52783" started-at="2017-11-15T08:17:36Z" finished-at="2017-11-15T08:18:29Z">
+      <class name="com.selenium.test.LoginTest">
+        <test-method status="PASS" signature="ff()[pri:0, instance:com.selenium.test.LoginTest@5391d8be]" name="ff" is-config="true" duration-ms="26019" started-at="2017-11-15T16:17:36Z" finished-at="2017-11-15T16:18:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ff -->
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.selenium.test.LoginTest@5391d8be]" name="startUp" duration-ms="25196" started-at="2017-11-15T16:18:02Z" finished-at="2017-11-15T16:18:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.test.LoginTest@5391d8be]" name="quit" is-config="true" duration-ms="1099" started-at="2017-11-15T16:18:28Z" finished-at="2017-11-15T16:18:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.selenium.test.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="70622" started-at="2017-12-05T02:57:30Z" finished-at="2017-12-05T02:58:40Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="70622" started-at="2017-12-05T02:57:30Z" finished-at="2017-12-05T02:58:40Z">
+      <class name="com.selenium.test.LoginTest">
+        <test-method status="PASS" signature="ff()[pri:0, instance:com.selenium.test.LoginTest@68837a77]" name="ff" is-config="true" duration-ms="52411" started-at="2017-12-05T10:57:30Z" finished-at="2017-12-05T10:58:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ff -->
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.selenium.test.LoginTest@68837a77]" name="startUp" duration-ms="16385" started-at="2017-12-05T10:58:22Z" finished-at="2017-12-05T10:58:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.test.LoginTest@68837a77]" name="quit" is-config="true" duration-ms="1785" started-at="2017-12-05T10:58:38Z" finished-at="2017-12-05T10:58:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.selenium.test.LoginTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
