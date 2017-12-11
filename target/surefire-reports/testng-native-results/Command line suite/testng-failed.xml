@@ -5,8 +5,8 @@
     <classes>
       <class name="com.selenium.test.LoginTest">
         <methods>
-          <include name="quit"/>
           <include name="startUp"/>
+          <include name="quit"/>
           <include name="ff"/>
         </methods>
       </class> <!-- com.selenium.test.LoginTest -->

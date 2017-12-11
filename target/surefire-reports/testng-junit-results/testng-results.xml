@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="51" started-at="2017-12-05T02:58:44Z" finished-at="2017-12-05T02:58:44Z">
+  <suite name="Command line suite" duration-ms="198" started-at="2017-12-11T09:22:35Z" finished-at="2017-12-11T09:22:35Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="51" started-at="2017-12-05T02:58:44Z" finished-at="2017-12-05T02:58:44Z">
+    <test name="Command line test" duration-ms="198" started-at="2017-12-11T09:22:35Z" finished-at="2017-12-11T09:22:35Z">
       <class name="secod_my_maven.maven.AppTest">
-        <test-method status="PASS" signature="testApp()[pri:0, instance:testApp(secod_my_maven.maven.AppTest)]" name="testApp" duration-ms="11" started-at="2017-12-05T10:58:44Z" finished-at="2017-12-05T10:58:44Z">
+        <test-method status="PASS" signature="testApp()[pri:0, instance:testApp(secod_my_maven.maven.AppTest)]" name="testApp" duration-ms="2" started-at="2017-12-11T17:22:35Z" finished-at="2017-12-11T17:22:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApp -->
