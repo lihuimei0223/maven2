@@ -5,7 +5,7 @@
 	<groupId>secod_my_maven</groupId>
 	<artifactId>maven</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 
 	<name>maven</name>
 	<url>http://maven.apache.org</url>
@@ -31,20 +31,12 @@
 	<build>
 		<plugins>
 			<plugin>
-
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.12.4</version>
 				<configuration>
-
-					<excludes>
-						<exclude>
-							${project.basedir}/src/test/java/secod_my_maven、maven/AppTest.java
-						</exclude>
-					</excludes>
-
 					<sureXmlFiles>
 						<sureXmlFile>
-							${project.basedir}/src/test/java/com/selenium/test/LoginTest.xml
+							testng.xml
 						</sureXmlFile>
 					</sureXmlFiles>
 				</configuration>

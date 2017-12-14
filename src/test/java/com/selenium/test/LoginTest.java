@@ -2,7 +2,6 @@ package com.selenium.test;
 
 import org.testng.annotations.Test;
 
-import secod_my_maven.maven.common;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
